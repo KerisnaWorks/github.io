@@ -24,8 +24,6 @@
             overflow-x: hidden;
         }
 
-        /* BACKGROUND EFFECT */
-
         body::before {
             content: "";
             position: fixed;
@@ -51,8 +49,6 @@
             bottom: -150px;
             z-index: -1;
         }
-
-        /* NAVBAR */
 
         nav {
             position: fixed;
@@ -88,8 +84,6 @@
         nav a:hover {
             color: #60a5fa;
         }
-
-        /* HERO */
 
         .hero {
             min-height: 100vh;
@@ -128,204 +122,3 @@
             font-size: 20px;
             line-height: 1.7;
             max-width: 650px;
-        }
-
-        /* TRAITS */
-
-        .traits {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin: 30px 0;
-        }
-
-        .traits span {
-            padding: 11px 17px;
-            border-radius: 50px;
-            background: rgba(255,255,255,0.05);
-            border: 1px solid rgba(255,255,255,0.1);
-            color: #dbeafe;
-            font-size: 14px;
-            backdrop-filter: blur(10px);
-            transition: 0.3s;
-        }
-
-        .traits span:hover {
-            transform: translateY(-3px);
-            border-color: #60a5fa;
-            background: rgba(96,165,250,0.1);
-        }
-
-        .warning {
-            color: #e2e8f0;
-            font-size: 16px;
-            line-height: 1.7;
-        }
-
-        /* BUTTON */
-
-        .btn {
-            display: inline-block;
-            margin-top: 35px;
-            padding: 15px 25px;
-            border-radius: 10px;
-            background: linear-gradient(90deg, #2563eb, #7c3aed);
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            box-shadow: 0 10px 35px rgba(37,99,235,0.25);
-            transition: 0.3s;
-        }
-
-        .btn:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 15px 45px rgba(124,58,237,0.35);
-        }
-
-        /* ABOUT */
-
-        .about {
-            padding: 120px 8%;
-            background: rgba(15,23,42,0.65);
-            border-top: 1px solid rgba(255,255,255,0.06);
-            border-bottom: 1px solid rgba(255,255,255,0.06);
-        }
-
-        .about-container {
-            max-width: 900px;
-        }
-
-        .about h2 {
-            font-size: 50px;
-            margin-bottom: 25px;
-        }
-
-        .about h2 span {
-            color: #60a5fa;
-        }
-
-        .about p {
-            color: #aeb9cc;
-            font-size: 18px;
-            line-height: 1.9;
-        }
-
-        /* FOOTER */
-
-        footer {
-            padding: 30px;
-            text-align: center;
-            color: #64748b;
-            font-size: 14px;
-        }
-
-        /* MOBILE */
-
-        @media (max-width: 600px) {
-
-            nav {
-                padding: 20px;
-            }
-
-            nav a {
-                margin-left: 12px;
-            }
-
-            .hero {
-                padding: 120px 20px 70px;
-            }
-
-            .hero h1 {
-                font-size: 52px;
-                letter-spacing: -3px;
-            }
-
-            .intro {
-                font-size: 17px;
-            }
-
-            .about {
-                padding: 80px 20px;
-            }
-
-            .about h2 {
-                font-size: 40px;
-            }
-        }
-    </style>
-</head>
-
-<body>
-
-    <nav>
-        <h2>Kerisna<span>.</span></h2>
-
-        <div>
-            <a href="#home">Home</a>
-            <a href="#about">Tentang</a>
-        </div>
-    </nav>
-
-
-    <section class="hero" id="home">
-
-        <div class="hero-content">
-
-            <p class="small">WELCOME TO MY CHAOTIC SPACE</p>
-
-            <h1>
-                Hi, saya <span>Kerisna Santosa</span>
-            </h1>
-
-            <p class="intro">
-                Orang yang suka gabut, malas ribut,
-                tapi kalau diajak ribut ya ayo aja.
-            </p>
-
-            <div class="traits">
-                <span>Baperan</span>
-                <span>Suka marah</span>
-                <span>Emosian</span>
-                <span>Agak gila</span>
-                <span>Mungkin stres</span>
-            </div>
-
-            <p class="warning">
-                Kris nggak suka diganggu.
-                Kalau diganggu, Kris marah.
-            </p>
-
-            <a class="btn" href="#about">
-                Masuk ke dunia Kris
-            </a>
-
-        </div>
-
-    </section>
-
-
-    <section class="about" id="about">
-
-        <div class="about-container">
-
-            <h2>Tentang <span>Kris</span></h2>
-
-            <p>
-                Nama saya Kerisna Santosa.
-                Saya mahasiswa Informatika yang sedang mencari
-                arah, pengalaman, dan tujuan saya sendiri.
-                Kadang serius, kadang nggak jelas, dan lebih sering
-                melakukan sesuatu dengan cara saya sendiri.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <footer>
-        © 2026 Kerisna Santosa
-    </footer>
-
-</body>
-</html>
